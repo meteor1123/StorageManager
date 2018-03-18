@@ -1,4 +1,3 @@
-This is readme for Group4 's Assignment1.
 
 
 In this Assignment, we add storage_mgr.c and one new DEFINE CONST PARAMETER in dberror.h.
@@ -12,10 +11,3 @@ We also use some system methods(remove,for example) and stream methods(fwrite,fr
 Of course, if any errors happens, there will be return specific error code. 
 If it works, return RC_OK.
 
-
-
-Zehao Lv- Basic methods
-
-Silin Huang,Guenzhe Sun- page file methods
-
-Guangwei Ban- Block methods and bug fix
