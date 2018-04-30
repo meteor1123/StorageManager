@@ -1,19 +1,32 @@
-
 SRC := \
-	dberror.c \
-	storage_mgr.c \
-	test_assign1_1.c
+buffer_mgr.c \
+buffer_mgr_stat.c \
+dberror.c \
+storage_mgr.c \
+record_mgr.c \
+rm_serializer.c \
+expr.c \
+test_assign3_1.c
+	
+	
 OBJ := \
-	dberror.o \
-	storage_mgr.o \
-	test_assign1_1.o
+buffer_mgr.o \
+buffer_mgr_stat.o \
+dberror.o \
+storage_mgr.o \
+record_mgr.o \
+rm_serializer.c \
+expr.o \
+test_assign3_1.o
+	
+	
 
-test_assign1 : $(OBJ)
-	gcc -o test_assign1  $?
+assign3: $(OBJ)
+	gcc -o assign3 $?
 	
 
 %.o: %.c
 	gcc -g -c $<
 
 clean:
-	rm -rf test_assign1  *.o
+	rm -rf assign3 *.o
